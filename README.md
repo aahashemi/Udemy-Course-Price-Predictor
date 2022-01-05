@@ -1,4 +1,4 @@
-# Project descrition
+# Project Description
 
 |id| title|is_paid|price|curreny|price_string|
 |:------| :------|:------|:------|:------|:------|
@@ -13,7 +13,7 @@
 
 
 
-# How to use it?
+# How To Use It?
 
 
 ### Example 1 - single keyword ###
