@@ -37,7 +37,7 @@ The `word2vec_udemy.model` is the vector representation model for the udemy cour
 
 
 # How To Use It?
-To use this tool all you need to do is to call the **predictPrice()** function in the `UdemyCourse_PricePredictor.ipynb`. 
+To use this tool all you need to do is to call the **predictPrice()** function in the `Udemy_Course_Price_Predictor.ipynb`. 
 <br>
 Note: Make sure the DATABSE_PATH (cleaned_udemy_databse.csv) and MODEL_PATH (word2vec_udemy.model) are set correctly
 
