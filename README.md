@@ -1,20 +1,22 @@
 # Project Description
 
 ### Database
-
+The database contains data of 10000 Udemy courses. Such as *id, title, is_paid, price, currency, and course URL*. There are two types of databases in this repository
 1. `raw_udemy_databse.csv`
-              1. A nested numbered list
-              2. Which is numbered
-2.`cleaned_udemy_databse.csv`
+   
 
-The only difference between `raw_udemy_databse.csv` and `cleaned_udemy_databse.csv` is that the stop words in the **title** coloumn  are removed in `cleaned_udemy_databse.csv`
+2. `cleaned_udemy_databse.csv`
+    * The only differnce of this csv file with *raw_udemy_databse.csv* file is that the stop words in the **title** coloumn are removed.
+`
 
 ````
-Stop words are commonly used in Text Mining and Natural Language Processing (NLP) to 
+STOP WORDS: They are commonly used in Text Mining and Natural Language Processing (NLP) to 
 eliminate words that are so commonly used that they carry very little useful information.
 
 Examples of stop words in English are “a”, “the”, “is”, “are” and etc. 
 ````
+<br>
+The two tables below illustrate the diffrence bwtween `raw_udemy_databse.csv` and  `cleaned_udemy_databse.csv`:
 
 #### raw_udemy_databse.csv
 |id| `title`|is_paid|price|curreny|price_string|
@@ -23,14 +25,13 @@ Examples of stop words in English are “a”, “the”, “is”, “are” an
 
 <br>
 
-
 #### cleaned_udemy_database.csv
 |id| `title`|is_paid|price|curreny|price_string|
 |:------:| :------:|:------:|:------:|:------:|:------:|
 |567828| complete python bootcamp zero hero python|1|89.99|EUR|€89.99|
 
 Stop words “2022”, “From”, “to”, “in” are removed
-
+- - - -
 ### Word2Vec
 
 word2vec_udemy.model
