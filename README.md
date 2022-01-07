@@ -16,14 +16,13 @@ eliminate words that are so commonly used that they carry very little useful inf
 Examples of stop words in English are “a”, “the”, “is”, “are” and etc. 
 ````
 <br>
-The two tables below illustrate the diffrence bwtween `raw_udemy_databse.csv` and  `cleaned_udemy_databse.csv`:
+
+The two tables below illustrate the diffrence bwtween `raw_udemy_databse.csv`  and  `cleaned_udemy_databse.csv`:
 
 #### raw_udemy_databse.csv
 |id| `title`|is_paid|price|curreny|price_string|
 |:------:| :------:|:------:|:------:|:------:|:------:|
 |567828| 2022 Complete Python Bootcamp From Zero to Hero in Python|1|89.99|EUR|€89.99|
-
-<br>
 
 #### cleaned_udemy_database.csv
 |id| `title`|is_paid|price|curreny|price_string|
@@ -32,9 +31,11 @@ The two tables below illustrate the diffrence bwtween `raw_udemy_databse.csv` an
 
 Stop words “2022”, “From”, “to”, “in” are removed
 - - - -
-### Word2Vec
+### Word2Vec Model
 
-word2vec_udemy.model
+The `word2vec_udemy.model` is the vector representation model for the udemy courses titles. 
+
+
 
 # How To Use It?
 
