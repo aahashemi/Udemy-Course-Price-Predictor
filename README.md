@@ -2,12 +2,10 @@
 
 ### Database
 
-|id| title|is_paid|price|curreny|price_string|currency_symbol|url|
-|:------:| :------:|:------:|:------:|:------:|:------:|:------:|:------:|
-|567828|2022 Complete Python Bootcamp From Zero to Hero in Python|1|89.99|EUR|€89.99|€|https://www.udemy.com/course/complete-python-bootcamp/|
-|793796|Microsoft Excel - Excel from Beginner to Advanced|1|99.99|EUR|€99.99|€|https://www.udemy.com/course/microsoft-excel-2013-from-beginner-to-advanced-and-beyond/|
-|625204|	The Web Developer Bootcamp 2022	|1	|89.99	|EUR|€89.99	|€	|https://www.udemy.com/course/the-web-developer-bootcamp/|
-
+1. `raw_udemy_databse.csv`
+              1. A nested numbered list
+              2. Which is numbered
+2.`cleaned_udemy_databse.csv`
 
 The only difference between `raw_udemy_databse.csv` and `cleaned_udemy_databse.csv` is that the stop words in the **title** coloumn  are removed in `cleaned_udemy_databse.csv`
 
