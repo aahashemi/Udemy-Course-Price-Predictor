@@ -7,7 +7,6 @@ The database contains data of 10000 Udemy courses. Such as *id, title, is_paid, 
 
 2. `cleaned_udemy_databse.csv`
     * The only differnce of this csv file with *raw_udemy_databse.csv* file is that the stop words in the **title** coloumn are removed.
-`
 
 ````
 STOP WORDS: They are commonly used in Text Mining and Natural Language Processing (NLP) to 
@@ -33,7 +32,7 @@ Stop words “2022”, “From”, “to”, “in” are removed
 - - - -
 ### Word2Vec Model
 
-The `word2vec_udemy.model` is the vector representation model for the udemy courses titles. 
+The `word2vec_udemy.model` is the vector representation model for the udemy courses titles. This model computes the similarity between the courses' title in the dataset
 
 
 
