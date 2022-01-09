@@ -1,10 +1,25 @@
-# Project Description
+# About The Project
+1. [Project Description](#ProjectDescription)
+   * [Database](#Database)
+      * [raw_udemy_databse.csv](#raw_udemy_databse.csv)
+      * [raw_udemy_databse.csv](#raw_udemy_databse.csv)
+   * [word2vec_udemy.model](#word2vec_udemy.model)
+   * [Ceate_Word2Vec_Model_From_Scratch.ipynb](#Ceate_Word2Vec_Model_From_Scratch.ipynb)
+   * [Udemy_Course_Price_Predictor.ipynb](#Udemy_Course_Price_Predictor.ipynb)
+   
+   
+  
+2. [How To Use It?](#HowToUseIt)
 
+
+
+<a id="ProjectDescription"></a> 
+# Project Description
+<a id="Database"></a>  
 ### Database
 The database contains data of 10000 Udemy courses. Such as *id, title, is_paid, price, currency, and course URL*. There are two types of databases in this repository
 1. `raw_udemy_databse.csv`
    
-
 2. `cleaned_udemy_databse.csv`
     * The only differnce of this csv file with *raw_udemy_databse.csv* file is that the stop words in the **title** coloumn are removed.
 
@@ -17,12 +32,13 @@ Examples of stop words in English are “a”, “the”, “is”, “are” an
 <br>
 
 The two tables below illustrate the diffrence bwtween `raw_udemy_databse.csv`  and  `cleaned_udemy_databse.csv`:
-
+<a id="raw_udemy_databse.csv"></a> 
 #### raw_udemy_databse.csv
 |id| `title`|is_paid|price|curreny|price_string|
 |:------:| :------:|:------:|:------:|:------:|:------:|
 |567828| 2022 Complete Python Bootcamp From Zero to Hero in Python|1|89.99|EUR|€89.99|
 
+<a id="cleaned_udemy_database.csv"></a>  
 #### cleaned_udemy_database.csv
 |id| `title`|is_paid|price|curreny|price_string|
 |:------:| :------:|:------:|:------:|:------:|:------:|
@@ -30,16 +46,32 @@ The two tables below illustrate the diffrence bwtween `raw_udemy_databse.csv`  a
 
 Stop words “2022”, “From”, “to”, “in” are removed
 - - - -
-### Word2Vec Model
+<a id="word2vec_udemy.model"></a>  
+### word2vec_udemy.model
 
 The `word2vec_udemy.model` is the vector representation model for the udemy courses titles. This model computes the similarity between the courses' title in the dataset
 
+- - - -
+
+<a id="Ceate_Word2Vec_Model_From_Scratch.ipynb"></a>  
+### Ceate_Word2Vec_Model_From_Scratch.ipynb
+A notebook **tutorial** to build a Word2Vec model from scratch in order to predict the keyword similarities in the Udemy course titles.
+This tutorial is designed for those who are intrested in how I came up with the `word2vec_udemy.model`. 
 
 
+- - - -
+<a id="Udemy_Course_Price_Predictor.ipynb"></a>  
+### Udemy_Course_Price_Predictor.ipynb
+A notebook **tutorial** that uses the pre-trained word2vec_udemy.model model in order to predict the price of a Udemy course based on a list of keywords. Follow this tutorial to for the step-by-step guide through
+
+
+<a id="HowToUseIt"></a>  
 # How To Use It?
 To use this tool all you need to do is to call the **predictPrice()** function in the `Udemy_Course_Price_Predictor.ipynb`. 
 <br>
-Note: Make sure the DATABSE_PATH (cleaned_udemy_databse.csv) and MODEL_PATH (word2vec_udemy.model) are set correctly
+Follow the **`Udemy_Course_Price_Predictor.ipynb`** tutorial to learn how to use the function
+<br>
+
 
 
 ### Example 1 - single keyword ###
