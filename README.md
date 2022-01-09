@@ -1,4 +1,10 @@
 # About The Project
+In this project you can predict a Udemy course price by providing a list of keywords (words that may be used in the course title)
+Follow the [Project Description](#ProjectDescription) to see what each of the files in this repository are used for. Or else go to the
+[How To Use It?](#HowToUseIt) section to use the AI tool
+
+<br>
+
 1. [Project Description](#ProjectDescription)
    * [Database](#Database)
       * [raw_udemy_databse.csv](#raw_udemy_databse.csv)
