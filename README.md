@@ -55,7 +55,7 @@ Stop words “2022”, “From”, “to”, “in” are removed
 <a id="word2vec_udemy.model"></a>  
 ### word2vec_udemy.model
 
-The `word2vec_udemy.model` is the vector representation model for the Udemy courses titles. This model computes the similarity between the courses' titles in the dataset.
+The `word2vec_udemy.model` is the vector representation model for the Udemy courses titles. This model computes the similarity between the courses' titles in the dataset. This model will be used for price prediction.
 
 - - - -
 
