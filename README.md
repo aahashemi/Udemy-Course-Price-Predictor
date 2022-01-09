@@ -1,7 +1,7 @@
 # About The Project
-In this project you can predict a Udemy course price by providing a list of keywords (words that may be used in the course title)
+In this project, you can predict a Udemy course price by providing a list of keywords (words that may be used in the course title)
 Follow the [Project Description](#ProjectDescription) to see what each of the files in this repository are used for. Or else go to the
-[How To Use It?](#HowToUseIt) section to use the AI tool
+[How To Use It?](#HowToUseIt) section to use the AI tool.
 
 <br>
 
@@ -23,11 +23,11 @@ Follow the [Project Description](#ProjectDescription) to see what each of the fi
 # Project Description
 <a id="Database"></a>  
 ### Database
-The database contains data of 10000 Udemy courses. Such as *id, title, is_paid, price, currency, and course URL*. There are two types of databases in this repository
+The database contains data of 10000 Udemy courses. Such as *id, title, is_paid, price, currency, and course URL*. There are two types of databases in this repository.
 1. `raw_udemy_databse.csv`
    
 2. `cleaned_udemy_databse.csv`
-    * The only differnce of this csv file with *raw_udemy_databse.csv* file is that the stop words in the **title** coloumn are removed.
+    * The only difference between this CSV file and the *raw_udemy_databse.csv* file is that the stop words in the **title** column are removed.
 
 ````
 STOP WORDS: They are commonly used in Text Mining and Natural Language Processing (NLP) to 
@@ -37,7 +37,7 @@ Examples of stop words in English are “a”, “the”, “is”, “are” an
 ````
 <br>
 
-The two tables below illustrate the diffrence bwtween `raw_udemy_databse.csv`  and  `cleaned_udemy_databse.csv`:
+The two tables below illustrate the difference between  `raw_udemy_databse.csv`  and  `cleaned_udemy_databse.csv`:
 <a id="raw_udemy_databse.csv"></a> 
 #### raw_udemy_databse.csv
 |id| `title`|is_paid|price|curreny|price_string|
@@ -55,20 +55,20 @@ Stop words “2022”, “From”, “to”, “in” are removed
 <a id="word2vec_udemy.model"></a>  
 ### word2vec_udemy.model
 
-The `word2vec_udemy.model` is the vector representation model for the udemy courses titles. This model computes the similarity between the courses' title in the dataset
+The `word2vec_udemy.model` is the vector representation model for the Udemy courses titles. This model computes the similarity between the courses' titles in the dataset.
 
 - - - -
 
 <a id="Ceate_Word2Vec_Model_From_Scratch.ipynb"></a>  
 ### Ceate_Word2Vec_Model_From_Scratch.ipynb
 A notebook **tutorial** to build a Word2Vec model from scratch in order to predict the keyword similarities in the Udemy course titles.
-This tutorial is designed for those who are intrested in how I came up with the `word2vec_udemy.model`. 
+This tutorial is designed for those who are interested in how I came up with the `word2vec_udemy.model`. 
 
 
 - - - -
 <a id="Udemy_Course_Price_Predictor.ipynb"></a>  
 ### Udemy_Course_Price_Predictor.ipynb
-A notebook **tutorial** that uses the pre-trained word2vec_udemy.model model in order to predict the price of a Udemy course based on a list of keywords. Follow this tutorial to for the step-by-step guide through
+A notebook **tutorial** that uses the pre-trained word2vec_udemy.model in order to predict the price of a Udemy course based on a list of keywords. Follow this tutorial for the step-by-step guide through.
 
 
 <a id="HowToUseIt"></a>  
@@ -103,7 +103,7 @@ Top 6 key words with the highest similarity: ['data', 'python', 'r', 'deep', 'sc
 Predicted price:  76 Euro
 ```
 
-### Example 3 - error keywork ###
+### Example 3 - error keyword ###
 
 ```python
 predictPrice(keyWords=['instagram','hamburger'],topn=2)
